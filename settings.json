@@ -1,0 +1,47 @@
+{
+    "explorer.openEditors.visible": 0,
+    "editor.snippetSuggestions": "top",
+    "emmet.showAbbreviationSuggestions": false,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.formatOnPaste": false,
+    "editor.fastScrollSensitivity": 1,
+    "editor.fontSize": 14,
+    "workbench.colorTheme": "Community Material Theme High Contrast",
+    "editor.fontLigatures": true,
+    "editor.tokenColorCustomizations": {
+      "comments": "#bbfd07d0"
+    },
+    "workbench.colorCustomizations" : {
+      "terminal.foreground" : "#f5f5f5"
+    },
+    "terminal.integrated.lineHeight": 1.6,
+    "terminal.integrated.fontSize": 15,
+    "files.autoSave": "off",
+    "editor.fontFamily": "Anonymous Pro",
+    "markdown.preview.fontSize": 36,
+    "editor.detectIndentation": true,
+    "editor.minimap.enabled": false,
+    "eslint.enable": true,
+    // "files.exclude": { "**/.*": true },
+    "eslint.validate": [
+      {
+        "language": "vue",
+        "autoFix": true
+      },
+      {
+          "language": "typescript",
+          "autoFix": true
+        },
+      {
+        "language": "html",
+        "autoFix": true
+      },
+      {
+        "language": "javascript",
+        "autoFix": true
+      }
+    ],
+    "workbench.iconTheme": "vscode-icons",
+    "window.zoomLevel": 0,
+    "terminal.integrated.shell.osx": "/bin/zsh",
+  }
