@@ -1,4 +1,4 @@
-HOST_NAME=minima
+HOST_NAME=yoyo
 
 source ~/.nvm/nvm.sh
 nvm use stable
@@ -6,6 +6,9 @@ shopt -s autocd
 shopt -s histappend
 
 export PATH=$PATH:$HOME/bin
+
+PATH=$PATH:$(go env GOPATH)/bin
+PATH=${PATH}:/usr/local/mysql/bin
 
 export HISTSIZE=5000
 export HISTFILESIZE=10000
@@ -22,7 +25,7 @@ bldgrn='\e[1;32m' # Bold Green
 bldpur='\e[1;35m' # Bold Purple
 txtrst='\e[0m'    # Text Reset
 
-emojis=("👾" "🌐" "🎲" "🌍" "🐉" "🌵")
+emojis=("🎧" "🍺" "🎲" "🎯" "🧩" "🍺")
 
 EMOJI=${emojis[$RANDOM % ${#emojis[@]} ]}
 
@@ -33,11 +36,14 @@ print_before_the_prompt () {
     printf "\n $txtred%s: $bldpur%s $txtgrn%s\n$txtrst" "$HOST_NAME" "$dir" "$(vcprompt)"
 }
 
+[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+bind "set completion-ignore-case on"
+bind "set show-all-if-ambiguous on"
+
 PROMPT_COMMAND=print_before_the_prompt
 PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
-PS1="$EMOJI >"
+PS1=" $EMOJI >"
 
-fortune | cowsay -f tux
 
 function mkcd()
 {
@@ -73,5 +79,7 @@ alias gi='git init'
 alias gl='git log'
 alias gp='git pull'
 alias gpsh='git push'
-alias gss='git status -s'
-alias gs='echo ""; echo "*********************************************"; echo -e "   DO NOT FORGET TO PULL BEFORE COMMITTING"; echo "*********************************************"; echo ""; git status'
+alias gss='git status -s'alias gs='echo ""; echo "*********************************************"; echo -e "   DO NOT FORGET TO PULL BEFORE COMMITTING"; echo "*********************************************"; echo ""; git status'
+
+
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion 
