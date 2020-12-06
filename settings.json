@@ -2,17 +2,18 @@
     "explorer.openEditors.visible": 0,
     "editor.snippetSuggestions": "top",
     "emmet.showAbbreviationSuggestions": false,
-    "editor.multiCursorModifier": "ctrlCmd",
-    "editor.formatOnPaste": false,
-    "editor.fastScrollSensitivity": 1,
-    "editor.fontSize": 14,
-    "workbench.colorTheme": "Community Material Theme High Contrast",
+    "editor.fontSize": 14.7,
+    "workbench.colorTheme": "Gruvbox Material Dark",
     "editor.fontLigatures": true,
     "editor.tokenColorCustomizations": {
       "comments": "#bbfd07d0"
     },
     "workbench.colorCustomizations" : {
-      "terminal.foreground" : "#f5f5f5"
+      "terminal.foreground": "#f5f5f5",
+      "statusBar.background": "#B48EAD",
+      "statusBar.noFolderBackground": "#B48EAD",
+      "statusBar.debuggingBackground": "#B48EAD",
+      "statusBar.foreground": "#434C5E"
     },
     "terminal.integrated.lineHeight": 1.6,
     "terminal.integrated.fontSize": 15,
@@ -43,5 +44,85 @@
     ],
     "workbench.iconTheme": "vscode-icons",
     "window.zoomLevel": 0,
-    "terminal.integrated.shell.osx": "/bin/zsh",
+    "terminal.integrated.shell.osx": "/usr/local/bin/bash",
+    "go.formatTool": "goimports",
+    "C_Cpp.updateChannel": "Insiders",
+    "python.pythonPath": "/usr/local/bin/python3",
+    "python.linting.pylintArgs": ["--load-plugins", "pylint_flask"],
+    
+    // The number of spaces a tab is equal to. This setting is overridden
+    // based on the file contents when `editor.detectIndentation` is true.
+    "editor.tabSize": 2,
+
+    // Insert spaces when pressing Tab. This setting is overriden
+    // based on the file contents when `editor.detectIndentation` is true.
+    "editor.insertSpaces": true,
+
+    // When opening a file, `editor.tabSize` and `editor.insertSpaces`
+    // will be detected based on the file contents. Set to false to keep
+    // the values you've explicitly set, above.
+    "editor.detectIndentation": false,
+    "vim.normalModeKeyBindingsNonRecursive": [
+      {
+        "before": ["<leader>", "e"],
+        "after": ["<C-e>"] 
+      }
+    ],  
+    "vim.normalModeKeyBindings": [
+      
+      {
+        "before" : ["<leader>", "q"],
+        "after" : [":", "w", "q", "enter"] 
+      },
+      {
+        "before" : ["<leader>", "g"],
+        "commands" : ["cursorBottom"] 
+      },
+      {
+        "before": ["<leader>", "h"],
+        "commands": ["cursorHome"]
+      },
+      {
+        "before": ["<leader>", "l"],
+        "commands": ["cursorEnd"]
+      },
+      {
+        "before": ["<leader>", "r"],
+        "after": ["<C-r>"]
+      }
+    ],  
+    "vim.visualModeKeyBindings": [
+      {
+        "before": ["k", "j"],
+        "after": ["<Esc>"]
+      },
+      {
+        "before": ["<leader>", "h"],
+        "commands": ["cursorHome"]
+      },
+      {
+        "before": ["<leader>", "l"],
+        "commands": ["cursorEnd"]
+      },
+    ],
+    "vim.insertModeKeyBindings": [
+      {
+        "before": ["k", "j"],
+        "after": ["<Esc>"]
+      }
+    ],
+    "vim.leader": "<space>",
+
+    "vim.statusBarColorControl": true,
+    "vim.statusBarColors.normal": ["#8FBCBB", "#434C5E"],
+    "vim.statusBarColors.insert": "#BF616A",
+    "vim.statusBarColors.visual": "#B48EAD",
+    "vim.statusBarColors.visualline": "#B48EAD",
+    "vim.statusBarColors.visualblock": "#A3BE8C",
+    "vim.statusBarColors.replace": "#D08770",
+    "vim.statusBarColors.commandlineinprogress": "#007ACC",
+    "vim.statusBarColors.searchinprogressmode": "#007ACC",
+    "vim.statusBarColors.easymotionmode": "#007ACC",
+    "vim.statusBarColors.easymotioninputmode": "#007ACC",
+    "vim.statusBarColors.surroundinputmode": "#007ACC",
   }
