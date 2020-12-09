@@ -26,7 +26,23 @@
       }
     ],  
     "vim.normalModeKeyBindings": [
-      
+        
+      {
+          "before": ["<C-h>"],
+          "commands": ["workbench.action.navigateLeft"]
+      },
+      {
+          "before": ["<C-l>"],
+          "commands": ["workbench.action.navigateRight"]
+      },
+      {
+          "before": ["<C-k>"],
+          "commands": ["workbench.action.navigateUp"]
+      },
+      {
+          "before": ["<C-j>"],
+          "commands": ["workbench.action.navigateDown"]
+      },
       {
         "before" : ["<leader>", "p"],
         "commands" : ["workbench.action.showCommands"] 
@@ -98,3 +114,5 @@
       "statusBar.foreground": "#434C5E"
     },
 }
+
+
