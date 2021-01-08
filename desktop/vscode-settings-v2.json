@@ -1,0 +1,112 @@
+{
+    "workbench.colorTheme": "Gruvbox Material Dark",
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "workbench.iconTheme": "vscode-icons",
+    "editor.tabSize": 2,
+    "vim.useSystemClipboard":true,
+      
+    "vim.normalModeKeyBindings": [
+      {
+          "before": ["<C-h>"],
+          "commands": ["workbench.action.navigateLeft"]
+      },
+      {
+          "before": ["<C-l>"],
+          "commands": ["workbench.action.navigateRight"]
+      },
+      {
+          "before": ["<C-k>"],
+          "commands": ["workbench.action.navigateUp"]
+      },
+      {
+          "before": ["<C-j>"],
+          "commands": ["workbench.action.navigateDown"]
+      },
+      {
+        "before" : ["<leader>", "p"],
+        "commands" : ["workbench.action.showCommands"]
+      },
+      {
+        "before" : ["<leader>", "q"],
+        "after" : [":", "w", "q", "enter"] 
+      },
+      {
+        "before" : ["<leader>", "g"],
+        "commands" : ["cursorBottom"] 
+      },
+      {
+        "before": ["<leader>", "h"],
+        "commands": ["cursorHome"]
+      },
+      {
+        "before": ["<leader>", "l"],
+        "commands": ["cursorEnd"]
+      },
+      {
+        "before": ["<leader>", "r"],
+        "after": ["<C-r>"]
+      },
+      {
+        "before": ["<leader>", "e"],
+        "commands": ["workbench.view.explorer"]
+      },
+      {
+        "before": ["<leader>", "v"],
+        "commands": ["workbench.action.splitEditor"]
+      },
+      {
+        "before": ["<leader>", "d"],
+        "commands": ["workbench.action.closeActiveEditor"]
+      },
+      {
+        "before": ["<leader>", "j"],
+        "commands": ["workbench.action.togglePanel"]
+      }
+    ],  
+    "vim.visualModeKeyBindings": [
+      {
+        "before": ["k", "j"],
+        "after": ["<Esc>"]
+      },
+      {
+        "before": ["<leader>", "h"],
+        "commands": ["cursorHome"]
+      },
+      {
+        "before": ["<leader>", "l"],
+        "commands": ["cursorEnd"]
+      },
+      {
+        "before" : ["<leader>", "g"],
+        "commands" : ["cursorBottom"] 
+      },
+      
+    ],
+    "vim.insertModeKeyBindings": [
+      {
+        "before": ["k", "j"],
+        "after": ["<Esc>"]
+      }
+    ],
+    "vim.leader": "<space>",
+
+    "vim.statusBarColorControl": true,
+    "vim.statusBarColors.normal": "#5C3723",
+    "vim.statusBarColors.insert": "#ad3224",
+    "vim.statusBarColors.visual": "#3224ad",
+    "vim.statusBarColors.visualline": "#B48EAD",
+    "vim.statusBarColors.visualblock": "#A3BE8C",
+    "vim.statusBarColors.replace": "#D08770",
+    "vim.statusBarColors.commandlineinprogress": "#007ACC",
+    "vim.statusBarColors.searchinprogressmode": "#007ACC",
+    "vim.statusBarColors.easymotionmode": "#007ACC",
+    "vim.statusBarColors.easymotioninputmode": "#007ACC",
+    "vim.statusBarColors.surroundinputmode": "#007ACC",
+    "workbench.colorCustomizations": {
+      "statusBar.background": "#3224ad",
+      "statusBar.noFolderBackground": "#3224ad",
+      "statusBar.debuggingBackground": "#3224ad",
+      "statusBar.foreground": "#fdfdfd"
+    },
+    "workbench.activityBar.visible": true
+}
