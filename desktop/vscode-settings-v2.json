@@ -61,6 +61,14 @@
       {
         "before": ["<leader>", "j"],
         "commands": ["workbench.action.togglePanel"]
+      },
+      {
+        "before": ["<leader>", "b"],
+        "commands": ["workbench.action.toggleSidebarVisibility"]
+      },
+      {
+        "before": ["<leader>", "s"],
+        "commands": ["workbench.action.quickOpen"]
       }
     ],  
     "vim.visualModeKeyBindings": [
