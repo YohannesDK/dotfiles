@@ -4,7 +4,7 @@
     "workbench.iconTheme": "vscode-icons",
     "editor.tabSize": 2,
     "vim.useSystemClipboard":true,
-      
+    "editor.minimap.enabled": false,
     "vim.normalModeKeyBindings": [
       {
           "before": ["<C-h>"],
