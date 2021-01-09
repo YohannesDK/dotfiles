@@ -98,6 +98,10 @@
     ],
     "vim.leader": "<space>",
 
+    "vim.handleKeys": {
+      "<C-a>": false,
+      "<C-f>": false
+    },
     "vim.statusBarColorControl": true,
     "vim.statusBarColors.normal": "#5C3723",
     "vim.statusBarColors.insert": "#ad3224",
