@@ -5,6 +5,7 @@
     "editor.tabSize": 2,
     "vim.useSystemClipboard":true,
     "editor.minimap.enabled": false,
+    "vim.easymotion": true,
     "vim.normalModeKeyBindings": [
       {
           "before": ["<C-h>"],
@@ -120,5 +121,11 @@
       "statusBar.debuggingBackground": "#3224ad",
       "statusBar.foreground": "#fdfdfd"
     },
-    "workbench.activityBar.visible": true
+    "workbench.activityBar.visible": true,
+    "workbench.editorAssociations": [
+      {
+        "viewType": "jupyter.notebook.ipynb",
+        "filenamePattern": "*.ipynb"
+      }
+    ]
 }
